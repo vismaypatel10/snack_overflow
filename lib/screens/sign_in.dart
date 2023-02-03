@@ -2,6 +2,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:snck_overflow/api_services.dart';
 import 'package:snck_overflow/screens/bottom_navigationbar.dart';
+import 'package:snck_overflow/screens/forgot_psw.dart';
 import 'package:snck_overflow/widgets/ctm_textbutton.dart';
 
 class SignIn extends StatefulWidget {
@@ -69,7 +70,6 @@ class _SignInState extends State<SignIn> {
                         }
                         return null;
                       },
-                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         fillColor: const Color(0xfff7f7f7),
                         filled: true,
@@ -152,8 +152,22 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ForgotPassword(),
+                                ));
+                          },
+                          child: Text('Forgot password')),
+                    ],
+                  ),
                   Container(
-                    margin: const EdgeInsets.only(top: 28),
+                    // margin: const EdgeInsets.only(top: 10),
                     child: const Divider(
                       indent: 80,
                       endIndent: 80,
