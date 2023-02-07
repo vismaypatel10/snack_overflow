@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:snck_overflow/model/login_model.dart';
+import 'package:snck_overflow/profile_screens/default_screen1.dart';
 import 'package:snck_overflow/screens/bottom_navigationbar.dart';
 
 import 'model/register_model.dart';
@@ -33,7 +34,7 @@ class ApiServices {
           // Navigator.pushReplacement(
           //     context,
           //     MaterialPageRoute(
-          //       builder: (context) => const SignIn(),
+          //       builder: (context) => const DefaultProfile(),
           //     ));
         } else {}
       } else {

@@ -130,6 +130,7 @@ class _SignUp_EmailState extends State<SignUp_Email> {
                         return null;
                       },
                       //maxLength: 6,
+                      obscureText: true,
                       decoration: InputDecoration(
                           fillColor: const Color(0xfff7f7f7),
                           filled: true,
@@ -188,8 +189,6 @@ class _SignUp_EmailState extends State<SignUp_Email> {
                     onPressed: () {
                       if (_formkey.currentState!.validate()) {
                         setState(() {
-                          // email = EmailController.text;
-                          // password = PasswordController.text;
                           apiServices.userRegister(EmailController.text.trim(),
                               PasswordController.text.trim(), context);
                         });

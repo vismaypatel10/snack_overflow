@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:snck_overflow/onboarding_page.dart';
@@ -43,30 +41,29 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Container(
-          child: Center(
-              child: Container(
-                  height: 150,
-                  width: 150,
-                  child: Image.asset('assets/logos/signin-logo.png'))),
-        )
-        // AnimatedSplashScreen(
-        //   splash: Column(
-        //     crossAxisAlignment: CrossAxisAlignment.center,
-        //     mainAxisAlignment: MainAxisAlignment.center,
-        //     children: [
-        //       Container(
-        //         height: 150,
-        //         width: 150,
-        //         child: Image.asset('assets/logos/signin-logo.png'),
-        //       )
-        //     ],
-        //   ),
-        //   splashIconSize: double.maxFinite,
-        //   splashTransition: SplashTransition.fadeTransition,
-        //
-        //   duration: 1000,
-        //   animationDuration: Duration(seconds: 2),
-        // ));
-        );
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: const AssetImage('assets/images/signin_bg.jpg'),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.5), BlendMode.darken))),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Container(
+                  height: 165,
+                  width: 180,
+                  decoration: const BoxDecoration(
+                      //color: Colors.blue,
+                      image: DecorationImage(
+                          image: AssetImage('assets/logos/app-logo.png'))),
+                  //child: Image.asset('logos/app-logo@3x.png'),
+                ),
+              ),
+            ],
+          ),
+        ));
   }
 }

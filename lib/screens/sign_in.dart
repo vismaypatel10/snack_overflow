@@ -121,6 +121,7 @@ class _SignInState extends State<SignIn> {
                         return null;
                       },
                       // maxLength: 6,
+                      obscureText: true,
                       decoration: InputDecoration(
                         fillColor: const Color(0xfff7f7f7),
                         filled: true,
