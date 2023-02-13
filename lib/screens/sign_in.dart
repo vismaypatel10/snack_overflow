@@ -185,10 +185,16 @@ class _SignInState extends State<SignIn> {
                     onPressed: () {
                       if (_formkey.currentState!.validate()) {
                         setState(() {
-                          // email = EmailController.text;
-                          // password = PasswordController.text;
-                          ApiServices().userLogin(EmailController.text.trim(),
-                              PasswordController.text.trim(), context);
+                          email = EmailController.text;
+                          password = PasswordController.text;
+                          // ApiServices().userLogin(EmailController.text.trim(),
+                          //     PasswordController.text.trim(), context);
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    BottomNaviBar(NewIndex: 0),
+                              ));
                         });
                       }
                     },

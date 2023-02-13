@@ -103,8 +103,7 @@ class ApiServices {
             margin: EdgeInsets.all(15),
           ));
           Navigator.of(context).pushAndRemoveUntil(
-              MaterialPageRoute(
-                  builder: (context) => BottomNaviBar(NewIndex: 0)),
+              MaterialPageRoute(builder: (context) => DefaultProfile()),
               (Route route) => false);
         } else {}
       } else {

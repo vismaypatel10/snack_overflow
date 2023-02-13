@@ -189,8 +189,13 @@ class _SignUp_EmailState extends State<SignUp_Email> {
                     onPressed: () {
                       if (_formkey.currentState!.validate()) {
                         setState(() {
-                          apiServices.userRegister(EmailController.text.trim(),
-                              PasswordController.text.trim(), context);
+                          // apiServices.userRegister(EmailController.text.trim(),
+                          //     PasswordController.text.trim(), context);
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DefaultProfile(),
+                              ));
                         });
                       }
                     },

@@ -59,7 +59,7 @@ class _AccountState extends State<Account> {
                     ),
                     TextButton(
                         onPressed: () {
-                          logout();
+                          //logout();
                         },
                         child: Text(
                           'Logout',
@@ -106,17 +106,17 @@ class _AccountState extends State<Account> {
                         SizedBox(
                           height: 6,
                         ),
-                        Text(
-                          '$email',
-                          //'${loginModel.data}',
-                          style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xff979197)),
-                        ),
-                        SizedBox(
-                          height: 6,
-                        ),
+                        // Text(
+                        //   '$email',
+                        //   //'${loginModel.data}',
+                        //   style: TextStyle(
+                        //       fontSize: 15,
+                        //       fontWeight: FontWeight.w600,
+                        //       color: Color(0xff979197)),
+                        // ),
+                        // SizedBox(
+                        //   height: 6,
+                        // ),
                         Text(
                           'San Francisco, CA',
                           style: TextStyle(
