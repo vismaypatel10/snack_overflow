@@ -152,17 +152,22 @@ class _BuildBundleState extends State<BuildBundle> {
                             EdgeInsets.only(left: 16, right: 16, bottom: 16),
                         child: Padding(
                           padding: const EdgeInsets.all(3.0),
-                          child: GridView.count(crossAxisCount: 2, children: [
-                            ctm_select_items(
-                                images: 'assets/images/dalgona_coffee.jpeg'),
-                            ctm_select_items(
-                                images: 'assets/images/taiyaki_ice_creem.jpeg'),
-                            ctm_select_items(
-                                images: 'assets/images/shaved_ice.jpeg'),
-                            ctm_select_items(
-                                images:
-                                    'assets/images/strawberry_chocolate.jpeg'),
-                          ]),
+                          child: GridView.count(
+                              physics: NeverScrollableScrollPhysics(),
+                              crossAxisCount: 2,
+                              children: [
+                                ctm_select_items(
+                                    images:
+                                        'assets/images/dalgona_coffee.jpeg'),
+                                ctm_select_items(
+                                    images:
+                                        'assets/images/taiyaki_ice_creem.jpeg'),
+                                ctm_select_items(
+                                    images: 'assets/images/shaved_ice.jpeg'),
+                                ctm_select_items(
+                                    images:
+                                        'assets/images/strawberry_chocolate.jpeg'),
+                              ]),
                         ),
                       ),
                       Column(

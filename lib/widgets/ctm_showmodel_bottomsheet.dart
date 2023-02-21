@@ -172,6 +172,7 @@ class ctm_ShowModelBottomSheet extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(3.0),
                                     child: GridView.count(
+                                        physics: NeverScrollableScrollPhysics(),
                                         crossAxisCount: 2,
                                         children: [
                                           ctm_select_items(
@@ -351,7 +352,7 @@ CartPopup(BuildContext context) {
               ),
               Flexible(
                 child: Text(
-                  'You have 3 items in shopping cart, check out now.',
+                  'Your selected items in shopping cart, check out now.',
                   style: TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.w400,

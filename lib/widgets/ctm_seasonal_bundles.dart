@@ -42,12 +42,15 @@ class ctm_seasonal_bundles extends StatelessWidget {
             ),
             child: Padding(
               padding: const EdgeInsets.all(3.0),
-              child: GridView.count(crossAxisCount: 2, children: [
-                ctm_select_items(images: gridimg1),
-                ctm_select_items(images: gridimg2),
-                ctm_select_items(images: gridimg3),
-                ctm_select_items(images: gridimg4),
-              ]),
+              child: GridView.count(
+                  physics: NeverScrollableScrollPhysics(),
+                  crossAxisCount: 2,
+                  children: [
+                    ctm_select_items(images: gridimg1),
+                    ctm_select_items(images: gridimg2),
+                    ctm_select_items(images: gridimg3),
+                    ctm_select_items(images: gridimg4),
+                  ]),
             ),
           ),
           SizedBox(
