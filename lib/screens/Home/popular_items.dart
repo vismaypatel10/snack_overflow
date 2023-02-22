@@ -39,7 +39,7 @@ class _PopularItemsState extends State<PopularItems> {
           height: 32,
         ),
         Container(
-          height: 225,
+          height: 201,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

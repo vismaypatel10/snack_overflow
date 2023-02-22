@@ -38,7 +38,7 @@ class _RecentPurchasesState extends State<RecentPurchases> {
           height: 32,
         ),
         Container(
-          height: 225,
+          height: 197,
           child: ListView.separated(
             separatorBuilder: (context, index) => SizedBox(
               width: 16,

@@ -82,6 +82,9 @@ class _MarketState extends State<Market> {
                     height: 20,
                   ),
                   PeopleNearbyFavorites(),
+                  SizedBox(
+                    height: 15,
+                  ),
                 ],
               ),
             ),

@@ -39,7 +39,7 @@ class _MysteryBundlesState extends State<MysteryBundles> {
           height: 32,
         ),
         Container(
-          height: 206,
+          height: 174,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
@@ -73,7 +73,7 @@ class _MysteryBundlesState extends State<MysteryBundles> {
               ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

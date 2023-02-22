@@ -39,7 +39,7 @@ class _RecommendedForYouState extends State<RecommendedForYou> {
           height: 32,
         ),
         Container(
-          height: 225,
+          height: 201,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

@@ -40,7 +40,7 @@ class _RecentUsersBundlesState extends State<RecentUsersBundles> {
           height: 32,
         ),
         Container(
-          height: 205,
+          height: 171,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

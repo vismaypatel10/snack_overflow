@@ -40,7 +40,7 @@ class _PeopleNearbyFavoritesState extends State<PeopleNearbyFavorites> {
           height: 32,
         ),
         Container(
-          height: 225,
+          height: 200,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

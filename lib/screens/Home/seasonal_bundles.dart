@@ -39,7 +39,7 @@ class _SeasonalBundlesState extends State<SeasonalBundles> {
           height: 32,
         ),
         Container(
-          height: 205,
+          height: 174,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

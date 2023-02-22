@@ -85,6 +85,9 @@ class _HomePageState extends State<HomePage> {
                 height: 24,
               ),
               MysteryBundles(),
+              SizedBox(
+                height: 15,
+              ),
             ],
           ),
         ),
